@@ -1,0 +1,11 @@
+﻿<li class="nav-item">
+    <a class="nav-link" href="@Href">@ChildContent</a>
+</li>
+
+@code{ 
+    [Parameter]
+    public RenderFragment ChildContent { get; set; }
+
+    [Parameter]
+    public string Href { get; set; }
+}

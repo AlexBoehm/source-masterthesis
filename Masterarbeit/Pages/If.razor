@@ -1,0 +1,30 @@
+﻿@page "/if"
+
+<h1>Lists</h1>
+
+<ul>
+    @foreach (var name in names) {
+        <li>
+            @name
+
+            @if (name.StartsWith("J")) {
+                <button @onclick="_ => RemoveName(name)">delete</button>
+            }
+        </li>
+    }
+</ul>
+
+@code {
+    List<string> names = new List<string>{
+        "George Washington",
+        "John Adams",
+        "Thomas Jefferson",
+        "James Madison",
+        "James Monroe",
+        "John Quincy Adams",
+        "Andrew Jackson"
+    };
+
+    void RemoveName(string name)
+        => names.Remove(name);
+}

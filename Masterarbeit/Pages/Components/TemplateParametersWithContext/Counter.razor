@@ -1,0 +1,15 @@
+﻿<p>@CurrentCountDisplay(currentCount)</p>
+
+<button class="btn btn-primary" @onclick="IncrementCount">Click me</button>
+
+@code {
+    [Parameter]
+    public RenderFragment<int> CurrentCountDisplay { get; set; }
+
+    private int currentCount = 0;
+
+    private void IncrementCount()
+    {
+        currentCount = currentCount + 1;
+    }
+}

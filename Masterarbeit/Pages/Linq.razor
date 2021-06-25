@@ -1,0 +1,21 @@
+﻿@page "/linq"
+
+<h1>Linq</h1>
+
+<ul>
+    @foreach (var name in (from name in names where name.StartsWith("J") select name)) {
+        <li>@name</li>
+    }
+</ul>
+
+@code {
+    List<string> names = new List<string>{
+        "George Washington",
+        "John Adams",
+        "Thomas Jefferson",
+        "James Madison",
+        "James Monroe",
+        "John Quincy Adams",
+        "Andrew Jackson"
+    };
+}

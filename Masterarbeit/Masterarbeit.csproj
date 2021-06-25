@@ -1,7 +1,18 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
     <TargetFramework>net5.0</TargetFramework>
   </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="wwwroot\resources\bootstrap\css\**" />
+    <Compile Remove="wwwroot\resources\bootstrap\js\**" />
+    <Content Remove="wwwroot\resources\bootstrap\css\**" />
+    <Content Remove="wwwroot\resources\bootstrap\js\**" />
+    <EmbeddedResource Remove="wwwroot\resources\bootstrap\css\**" />
+    <EmbeddedResource Remove="wwwroot\resources\bootstrap\js\**" />
+    <None Remove="wwwroot\resources\bootstrap\css\**" />
+    <None Remove="wwwroot\resources\bootstrap\js\**" />
+  </ItemGroup>
 
 </Project>
