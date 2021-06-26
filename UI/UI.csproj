@@ -17,4 +17,8 @@
     <None Remove="wwwroot\resources\bootstrap\js\**" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Pages\DifferentChanges\" />
+  </ItemGroup>
+
 </Project>

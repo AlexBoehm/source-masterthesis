@@ -1,0 +1,27 @@
+﻿@{
+var style = currentCount >= 10 ? "background: yellow" : "";
+}
+<p>Current count: <span style="@style">@currentCount</span></p>
+
+@if (currentCount < 15) {
+    <button class="btn btn-primary" @onclick="IncrementCount">
+        Increment
+    </button>
+}
+
+@if(currentCount >= 10) {
+    <SendMail OnMailSent="@OnMailSent" Counter="@currentCount" />
+}
+
+@code {
+    private int currentCount = 0;
+
+    private void IncrementCount() {
+        currentCount++;
+    }
+
+    private void OnMailSent() {
+        currentCount = 0;
+    }
+
+}

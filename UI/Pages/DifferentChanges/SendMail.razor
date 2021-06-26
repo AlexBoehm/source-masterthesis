@@ -1,0 +1,9 @@
+﻿<button class="btn btn-primary" @onclick="OnMailSent">Send alert e-mail</button>
+
+@code{
+    [Parameter]
+    public Action OnMailSent { get; set; }
+
+    [Parameter]
+    public int Counter { get; set; }
+}
