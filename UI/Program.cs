@@ -7,7 +7,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace Masterarbeit {
+namespace Masterthesis.UI {
     public class Program {
         public static void Main(string[] args) {
             CreateHostBuilder(args).Build().Run();

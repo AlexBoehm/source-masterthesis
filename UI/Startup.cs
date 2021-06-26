@@ -4,7 +4,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 
-namespace Masterarbeit {
+namespace Masterthesis.UI {
     public class Startup {
         public Startup(IConfiguration configuration) {
             Configuration = configuration;

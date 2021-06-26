@@ -2,6 +2,8 @@
 
   <PropertyGroup>
     <TargetFramework>net5.0</TargetFramework>
+    <AssemblyName>Masterthesis.UI</AssemblyName>
+    <RootNamespace>Masterthesis.UI</RootNamespace>
   </PropertyGroup>
 
   <ItemGroup>
